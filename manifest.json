@@ -1,0 +1,21 @@
+{
+    "name": "ebook tools",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "ebook download tool",
+    "permissions": [
+        "storage"
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "click here!",
+        "default_popup": "popup.html"
+
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://www.7kshu.com/*"],
+            "js": ["js/jquery.min.js", "js/common.js"]
+        }
+    ]
+}
